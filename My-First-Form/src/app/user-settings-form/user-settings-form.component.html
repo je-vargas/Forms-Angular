@@ -1,16 +1,62 @@
 <div class="container">
-    <h2>User Settings</h2>
+  <h2>User Settings</h2>
   <form action="">
     <div class="form-group">
       <label for="name">Name</label>
       <input id="name" class="form-control" />
     </div>
     <div class="form-check form-group">
-        <input class="form-check-input" type="checkbox" id="emailOffers" name="emailOffers">
-        <label class="form-check-label" for="emailOffers">
-          Email Special Offers
-        </label>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="emailOffers"
+        name="emailOffers"
+      />
+      <label class="form-check-label" for="emailOffers">
+        Email Special Offers
+      </label>
     </div>
     <button class="btn btn-primary">Ok</button>
   </form>
+
+  <h5>User Interface Style</h5>
+  <div class="form-group">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="interfaceStyle"
+        id="lightInterfaceStyle"
+        value="light"
+        checked
+      />
+      <label class="form-check-label" for="lightInterfaceStyle1">
+        Light
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="interfaceStyle"
+        id="mediumInterfaceStyle"
+        value="medium"
+      />
+      <label class="form-check-label" for="mediumInterfaceStyle">
+        Medium
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="interfaceStyle"
+        id="darkInterfaceStyle"
+        value="dark"
+      />
+      <label class="form-check-label" for="darkInterfaceStyle">
+        Dark
+      </label>
+    </div>
+  </div>
 </div>
