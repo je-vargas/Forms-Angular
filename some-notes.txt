@@ -7,3 +7,10 @@ ngModel directive used to assess value entered into form using {{ from.value | j
 	2 -> references what ever has been added to the parent component in this case it 	is the data model
 
 ---------------
+Copying form data
+... = spread operator will copy what is in our the original data user setting and create a copy inside the user settings 
+
+to make a deper copy use load hash which has a method deepClone.
+
+ ---> Aim of having two sets of data is that if user went back or dind send the form we would lose data or corrupt instead 
+ 		we can add logic so that once form is sent we can themn copy user data to original data 
