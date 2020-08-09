@@ -10,7 +10,17 @@ ngModel directive used to assess value entered into form using {{ from.value | j
 Copying form data
 ... = spread operator will copy what is in our the original data user setting and create a copy inside the user settings 
 
-to make a deper copy use load hash which has a method deepClone.
+-------------- html
 
- ---> Aim of having two sets of data is that if user went back or dind send the form we would lose data or corrupt instead 
- 		we can add logic so that once form is sent we can themn copy user data to original data 
+ngNativeValidate turns off web form validation because all web browsers validate and display different messages this
+
+	-> add ngNativeValidate where ="ngForm" is to allow web validation 
+
+-------------- css
+
+	-> ng-untouched = losing focus of an specific section where we have css validation 			added 
+	-> ng-touched = hovering, clicking etc, on an specific section
+	-> ng-pristine = wild is empty
+	-> ng-dirty = data added
+	-> ng-valid
+	-> ng-invalid 
