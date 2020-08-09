@@ -1,0 +1,9 @@
+ngModel directive used to assess value entered into form using {{ from.value | json}}
+
+-> form is declared at the top inside form tag as #form="ngForm"
+-> 2 way data binding [(1)]='2'
+	
+	1 -> ngModel
+	2 -> references what ever has been added to the parent component in this case it 	is the data model
+
+---------------
