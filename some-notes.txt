@@ -24,3 +24,30 @@ ngNativeValidate turns off web form validation because all web browsers validate
 	-> ng-dirty = data added
 	-> ng-valid
 	-> ng-invalid 
+
+--------------- validation styling
+
+	Within in input we can add #nameField="ngModel"
+	within same class form group add separate div and reference as 				[hidden]="nameField.valid || nameField.untouched" where name field is the class 	declared inside input and the .valid invalid, etc is the css validation
+
+
+--------------- Submitting forms
+	add a method in the component which is referenced in the template
+	pass template referenced declared in the form into the method
+	as (ngSubmit)="method(form)"
+
+	-->
+
+	to avoid complicated css selectors we can use classes and assign them or take them 	off as logic is met 
+	
+	- in input at a reference variable and use this inside logic to 
+
+ <input id="name" class="form-control" name="nameInput" [(ngModel)]="userSetting.name" 
+        required #nameField="ngModel" 
+        [class.field-error]="form.submitted && nameField.invalid" /> 
+		<!--template reference variable is #namefield="ngModel"-->
+      <div [hidden]="!form.submitted || nameField.valid" 
+        class="alert alert-danger">
+        Please enter a name
+      </div>
+	..., etc
