@@ -32,6 +32,7 @@ ngNativeValidate turns off web form validation because all web browsers validate
 
 
 --------------- Submitting forms
+
 	add a method in the component which is referenced in the template
 	pass template referenced declared in the form into the method
 	as (ngSubmit)="method(form)"
@@ -51,3 +52,9 @@ ngNativeValidate turns off web form validation because all web browsers validate
         Please enter a name
       </div>
 	..., etc
+
+--------------- Handeling form control Events
+		
+	- (blur)="onBlur(nameField)" nameField type declaration inside component method 	is ngModel
+
+	using angular events lets you use the full html5 events
