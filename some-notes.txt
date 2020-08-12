@@ -58,3 +58,10 @@ ngNativeValidate turns off web form validation because all web browsers validate
 	- (blur)="onBlur(nameField)" nameField type declaration inside component method 	is ngModel
 
 	using angular events lets you use the full html5 events
+
+--------------- creating a data service 
+	
+	-> ng g s whatever name
+	
+
+
