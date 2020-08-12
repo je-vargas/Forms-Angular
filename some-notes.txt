@@ -63,5 +63,21 @@ ngNativeValidate turns off web form validation because all web browsers validate
 	
 	-> ng g s whatever name
 	
+--------------- posting form using observables 
+	
+	-> posting to a server is an Asyncronos operation
+		-> as we don't know how long we will be waiting for a response, slow 				network or server
+
+	-> javascript they are called promises
 
 
+	-> to get an observable to start working you need to call the subscribe method if
+	 You don't it won't work 
+		
+		../..etc.subscribe(
+			
+		   result => ,
+		   error =>
+		)
+
+	inside our data service we are using method of() from rjax passing back the 		userSetting data to create an observable
